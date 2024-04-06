@@ -1,9 +1,9 @@
 import { useState } from "react"
 
-const Edit = ({editTodo, task}) => {
+const Edit = ({editTodo, task} : any) => {
   const [value, setValue] = useState('');
 
-  const handleSubmit = e => {
+  const handleSubmit = (e: any) => {
     e.preventDefault()
     editTodo(value, task.id)
     setValue('')
@@ -20,4 +20,4 @@ const Edit = ({editTodo, task}) => {
   )
 }
 
-export default Edit
+export default Edit;
