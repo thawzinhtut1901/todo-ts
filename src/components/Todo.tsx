@@ -1,9 +1,9 @@
 import {AiFillEdit} from "react-icons/ai";
 import { BsFillTrashFill } from "react-icons/bs";
 
-const Todo = ({task, deleteTodo, editTodo}) => {
+const Todo = ({task, deleteTodo, editTodo} : any) => {
   return (
-    <div className="flex justify-between text-center  py-3 px-4 bg-zinc-500 text-lime-200 rounded-md mb-1 cursor-pointer">
+    <div className="flex justify-between text-center py-3 px-4 bg-zinc-500 text-lime-200 rounded-md mb-1 cursor-pointer">
       <p className="font-primary">{task.task}</p>
       <div className="flex items-center gap-x-4">
         <AiFillEdit className="text-xl" onClick={() => editTodo(task.id)}/>
